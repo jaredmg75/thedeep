@@ -1,0 +1,462 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F7740E2D26D9B50A00B1DFBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7740E2C26D9B50A00B1DFBD /* AppDelegate.swift */; };
+		F7740E2F26D9B50A00B1DFBD /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = F7740E2E26D9B50A00B1DFBD /* GameScene.sks */; };
+		F7740E3126D9B50A00B1DFBD /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = F7740E3026D9B50A00B1DFBD /* Actions.sks */; };
+		F7740E3326D9B50A00B1DFBD /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7740E3226D9B50A00B1DFBD /* GameScene.swift */; };
+		F7740E3526D9B50A00B1DFBD /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7740E3426D9B50A00B1DFBD /* GameViewController.swift */; };
+		F7740E3826D9B50A00B1DFBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7740E3626D9B50A00B1DFBD /* Main.storyboard */; };
+		F7740E3A26D9B50C00B1DFBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7740E3926D9B50C00B1DFBD /* Assets.xcassets */; };
+		F7740E4326DC42B300B1DFBD /* BaseNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7740E4226DC42B300B1DFBD /* BaseNode.swift */; };
+		F7740E4526DC433F00B1DFBD /* ChamberNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7740E4426DC433F00B1DFBD /* ChamberNode.swift */; };
+		F7740E4726DC437600B1DFBD /* PathNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7740E4626DC437600B1DFBD /* PathNode.swift */; };
+		F7740E4926DC43A100B1DFBD /* RoomNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7740E4826DC43A100B1DFBD /* RoomNode.swift */; };
+		F7740E4B26DC43C100B1DFBD /* DoorNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7740E4A26DC43C100B1DFBD /* DoorNode.swift */; };
+		F7740E4E26DC43F400B1DFBD /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7740E4D26DC43F400B1DFBD /* Hero.swift */; };
+		F7740E5226DC44EB00B1DFBD /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7740E5126DC44EB00B1DFBD /* Item.swift */; };
+		F7740E5426DC45FB00B1DFBD /* Wizzard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7740E5326DC45FB00B1DFBD /* Wizzard.swift */; };
+		F7740E5626DC463700B1DFBD /* Spell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7740E5526DC463700B1DFBD /* Spell.swift */; };
+		F7740E5826DC46F600B1DFBD /* Warrior.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7740E5726DC46F600B1DFBD /* Warrior.swift */; };
+		F7740E5A26DC472000B1DFBD /* Dwarf.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7740E5926DC472000B1DFBD /* Dwarf.swift */; };
+		F7740E5C26DC478B00B1DFBD /* Elf.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7740E5B26DC478B00B1DFBD /* Elf.swift */; };
+		F7740E5F26DC47EC00B1DFBD /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7740E5E26DC47EC00B1DFBD /* Monster.swift */; };
+		F7740E6126DC48BF00B1DFBD /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7740E6026DC48BF00B1DFBD /* Level.swift */; };
+		F7740E6326DC49B500B1DFBD /* Gobblin.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7740E6226DC49B500B1DFBD /* Gobblin.swift */; };
+		F7740E6526DC4F9B00B1DFBD /* Orc.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7740E6426DC4F9B00B1DFBD /* Orc.swift */; };
+		F7740E6726DC4FE500B1DFBD /* Spider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7740E6626DC4FE500B1DFBD /* Spider.swift */; };
+		F7740E6926DC502F00B1DFBD /* Blob.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7740E6826DC502F00B1DFBD /* Blob.swift */; };
+		F7740E6B26DC507700B1DFBD /* SandWorm.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7740E6A26DC507700B1DFBD /* SandWorm.swift */; };
+		F7740E6D26DC50CD00B1DFBD /* Dragon.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7740E6C26DC50CD00B1DFBD /* Dragon.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F7740E2926D9B50A00B1DFBD /* thedeep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = thedeep.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7740E2C26D9B50A00B1DFBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F7740E2E26D9B50A00B1DFBD /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		F7740E3026D9B50A00B1DFBD /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		F7740E3226D9B50A00B1DFBD /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		F7740E3426D9B50A00B1DFBD /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		F7740E3726D9B50A00B1DFBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F7740E3926D9B50C00B1DFBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F7740E3B26D9B50C00B1DFBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7740E4226DC42B300B1DFBD /* BaseNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNode.swift; sourceTree = "<group>"; };
+		F7740E4426DC433F00B1DFBD /* ChamberNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChamberNode.swift; sourceTree = "<group>"; };
+		F7740E4626DC437600B1DFBD /* PathNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathNode.swift; sourceTree = "<group>"; };
+		F7740E4826DC43A100B1DFBD /* RoomNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomNode.swift; sourceTree = "<group>"; };
+		F7740E4A26DC43C100B1DFBD /* DoorNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoorNode.swift; sourceTree = "<group>"; };
+		F7740E4D26DC43F400B1DFBD /* Hero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
+		F7740E5126DC44EB00B1DFBD /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		F7740E5326DC45FB00B1DFBD /* Wizzard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wizzard.swift; sourceTree = "<group>"; };
+		F7740E5526DC463700B1DFBD /* Spell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spell.swift; sourceTree = "<group>"; };
+		F7740E5726DC46F600B1DFBD /* Warrior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Warrior.swift; sourceTree = "<group>"; };
+		F7740E5926DC472000B1DFBD /* Dwarf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dwarf.swift; sourceTree = "<group>"; };
+		F7740E5B26DC478B00B1DFBD /* Elf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Elf.swift; sourceTree = "<group>"; };
+		F7740E5E26DC47EC00B1DFBD /* Monster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monster.swift; sourceTree = "<group>"; };
+		F7740E6026DC48BF00B1DFBD /* Level.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
+		F7740E6226DC49B500B1DFBD /* Gobblin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gobblin.swift; sourceTree = "<group>"; };
+		F7740E6426DC4F9B00B1DFBD /* Orc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Orc.swift; sourceTree = "<group>"; };
+		F7740E6626DC4FE500B1DFBD /* Spider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spider.swift; sourceTree = "<group>"; };
+		F7740E6826DC502F00B1DFBD /* Blob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blob.swift; sourceTree = "<group>"; };
+		F7740E6A26DC507700B1DFBD /* SandWorm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SandWorm.swift; sourceTree = "<group>"; };
+		F7740E6C26DC50CD00B1DFBD /* Dragon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dragon.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F7740E2626D9B50A00B1DFBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F7740E2026D9B50A00B1DFBD = {
+			isa = PBXGroup;
+			children = (
+				F7740E2B26D9B50A00B1DFBD /* thedeep */,
+				F7740E2A26D9B50A00B1DFBD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F7740E2A26D9B50A00B1DFBD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F7740E2926D9B50A00B1DFBD /* thedeep.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F7740E2B26D9B50A00B1DFBD /* thedeep */ = {
+			isa = PBXGroup;
+			children = (
+				F7740E4126DC425E00B1DFBD /* engine */,
+				F7740E2C26D9B50A00B1DFBD /* AppDelegate.swift */,
+				F7740E2E26D9B50A00B1DFBD /* GameScene.sks */,
+				F7740E3026D9B50A00B1DFBD /* Actions.sks */,
+				F7740E3226D9B50A00B1DFBD /* GameScene.swift */,
+				F7740E3426D9B50A00B1DFBD /* GameViewController.swift */,
+				F7740E3626D9B50A00B1DFBD /* Main.storyboard */,
+				F7740E3926D9B50C00B1DFBD /* Assets.xcassets */,
+				F7740E3B26D9B50C00B1DFBD /* Info.plist */,
+			);
+			path = thedeep;
+			sourceTree = "<group>";
+		};
+		F7740E4126DC425E00B1DFBD /* engine */ = {
+			isa = PBXGroup;
+			children = (
+				F7740E5D26DC47DC00B1DFBD /* monster */,
+				F7740E5026DC44BB00B1DFBD /* item */,
+				F7740E4C26DC43DE00B1DFBD /* hero */,
+				F7740E4F26DC44A100B1DFBD /* graph */,
+				F7740E6026DC48BF00B1DFBD /* Level.swift */,
+			);
+			path = engine;
+			sourceTree = "<group>";
+		};
+		F7740E4C26DC43DE00B1DFBD /* hero */ = {
+			isa = PBXGroup;
+			children = (
+				F7740E4D26DC43F400B1DFBD /* Hero.swift */,
+				F7740E5326DC45FB00B1DFBD /* Wizzard.swift */,
+				F7740E5726DC46F600B1DFBD /* Warrior.swift */,
+				F7740E5926DC472000B1DFBD /* Dwarf.swift */,
+				F7740E5B26DC478B00B1DFBD /* Elf.swift */,
+			);
+			path = hero;
+			sourceTree = "<group>";
+		};
+		F7740E4F26DC44A100B1DFBD /* graph */ = {
+			isa = PBXGroup;
+			children = (
+				F7740E4226DC42B300B1DFBD /* BaseNode.swift */,
+				F7740E4426DC433F00B1DFBD /* ChamberNode.swift */,
+				F7740E4626DC437600B1DFBD /* PathNode.swift */,
+				F7740E4826DC43A100B1DFBD /* RoomNode.swift */,
+				F7740E4A26DC43C100B1DFBD /* DoorNode.swift */,
+			);
+			path = graph;
+			sourceTree = "<group>";
+		};
+		F7740E5026DC44BB00B1DFBD /* item */ = {
+			isa = PBXGroup;
+			children = (
+				F7740E5126DC44EB00B1DFBD /* Item.swift */,
+				F7740E5526DC463700B1DFBD /* Spell.swift */,
+			);
+			path = item;
+			sourceTree = "<group>";
+		};
+		F7740E5D26DC47DC00B1DFBD /* monster */ = {
+			isa = PBXGroup;
+			children = (
+				F7740E5E26DC47EC00B1DFBD /* Monster.swift */,
+				F7740E6226DC49B500B1DFBD /* Gobblin.swift */,
+				F7740E6426DC4F9B00B1DFBD /* Orc.swift */,
+				F7740E6626DC4FE500B1DFBD /* Spider.swift */,
+				F7740E6826DC502F00B1DFBD /* Blob.swift */,
+				F7740E6A26DC507700B1DFBD /* SandWorm.swift */,
+				F7740E6C26DC50CD00B1DFBD /* Dragon.swift */,
+			);
+			path = monster;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F7740E2826D9B50A00B1DFBD /* thedeep */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7740E3E26D9B50C00B1DFBD /* Build configuration list for PBXNativeTarget "thedeep" */;
+			buildPhases = (
+				F7740E2526D9B50A00B1DFBD /* Sources */,
+				F7740E2626D9B50A00B1DFBD /* Frameworks */,
+				F7740E2726D9B50A00B1DFBD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = thedeep;
+			productName = thedeep;
+			productReference = F7740E2926D9B50A00B1DFBD /* thedeep.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F7740E2126D9B50A00B1DFBD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					F7740E2826D9B50A00B1DFBD = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = F7740E2426D9B50A00B1DFBD /* Build configuration list for PBXProject "thedeep" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F7740E2026D9B50A00B1DFBD;
+			productRefGroup = F7740E2A26D9B50A00B1DFBD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F7740E2826D9B50A00B1DFBD /* thedeep */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F7740E2726D9B50A00B1DFBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7740E3826D9B50A00B1DFBD /* Main.storyboard in Resources */,
+				F7740E2F26D9B50A00B1DFBD /* GameScene.sks in Resources */,
+				F7740E3A26D9B50C00B1DFBD /* Assets.xcassets in Resources */,
+				F7740E3126D9B50A00B1DFBD /* Actions.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F7740E2526D9B50A00B1DFBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7740E6B26DC507700B1DFBD /* SandWorm.swift in Sources */,
+				F7740E6126DC48BF00B1DFBD /* Level.swift in Sources */,
+				F7740E5C26DC478B00B1DFBD /* Elf.swift in Sources */,
+				F7740E5226DC44EB00B1DFBD /* Item.swift in Sources */,
+				F7740E4926DC43A100B1DFBD /* RoomNode.swift in Sources */,
+				F7740E5626DC463700B1DFBD /* Spell.swift in Sources */,
+				F7740E6526DC4F9B00B1DFBD /* Orc.swift in Sources */,
+				F7740E4726DC437600B1DFBD /* PathNode.swift in Sources */,
+				F7740E3326D9B50A00B1DFBD /* GameScene.swift in Sources */,
+				F7740E4B26DC43C100B1DFBD /* DoorNode.swift in Sources */,
+				F7740E6926DC502F00B1DFBD /* Blob.swift in Sources */,
+				F7740E3526D9B50A00B1DFBD /* GameViewController.swift in Sources */,
+				F7740E6726DC4FE500B1DFBD /* Spider.swift in Sources */,
+				F7740E4326DC42B300B1DFBD /* BaseNode.swift in Sources */,
+				F7740E4526DC433F00B1DFBD /* ChamberNode.swift in Sources */,
+				F7740E6326DC49B500B1DFBD /* Gobblin.swift in Sources */,
+				F7740E4E26DC43F400B1DFBD /* Hero.swift in Sources */,
+				F7740E5426DC45FB00B1DFBD /* Wizzard.swift in Sources */,
+				F7740E2D26D9B50A00B1DFBD /* AppDelegate.swift in Sources */,
+				F7740E6D26DC50CD00B1DFBD /* Dragon.swift in Sources */,
+				F7740E5A26DC472000B1DFBD /* Dwarf.swift in Sources */,
+				F7740E5826DC46F600B1DFBD /* Warrior.swift in Sources */,
+				F7740E5F26DC47EC00B1DFBD /* Monster.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F7740E3626D9B50A00B1DFBD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F7740E3726D9B50A00B1DFBD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F7740E3C26D9B50C00B1DFBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F7740E3D26D9B50C00B1DFBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F7740E3F26D9B50C00B1DFBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 27CBW5J4ZT;
+				INFOPLIST_FILE = thedeep/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.greenjm.thedeep;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F7740E4026D9B50C00B1DFBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 27CBW5J4ZT;
+				INFOPLIST_FILE = thedeep/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.greenjm.thedeep;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F7740E2426D9B50A00B1DFBD /* Build configuration list for PBXProject "thedeep" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7740E3C26D9B50C00B1DFBD /* Debug */,
+				F7740E3D26D9B50C00B1DFBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7740E3E26D9B50C00B1DFBD /* Build configuration list for PBXNativeTarget "thedeep" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7740E3F26D9B50C00B1DFBD /* Debug */,
+				F7740E4026D9B50C00B1DFBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F7740E2126D9B50A00B1DFBD /* Project object */;
+}
